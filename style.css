@@ -1,0 +1,144 @@
+:root {
+    --cor0: #ffdfcd;
+    --cor1: #fac0a4;
+    --cor2: #ff7a37;
+    --cor3: #FF5703;
+    --cor4: #FF2B03;
+    --cor5: #D44802;
+    --cor6: #913101;
+    --cor7: #230e00;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.login-container a {
+    text-decoration: none;
+    color: var(--cor7);
+}
+
+/* Login */
+
+.login-content {
+    max-width: 1300px;
+    height: 100vh;
+    margin: auto;
+}
+
+.login-container {
+    width: 380px;
+    height: 260px;
+    background-color: var(--cor2);
+    border: 2px solid var(--cor4);
+    box-shadow: 0 0 5px var(--cor3);
+    border-radius: 5px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cor7);
+    margin: 10px;
+}
+
+.login-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-hr {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 116px;
+}
+
+
+.login-dot-space {
+    width: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-dot {
+    width: 50px;
+    height: 1px;
+    border: 1.2px solid var(--cor0);
+    border-color: var(--cor0); 
+    box-shadow: 0 0 5px var(--cor0);
+    margin: 3px auto;
+    animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+.login-container label input {
+    width: 250px;
+    height: 25px;
+    border: 2px solid var(--cor4);
+    box-shadow: 0 0 5px var(--cor5);
+    border-radius: 3px;
+    font-size: 0.7rem;
+    margin: 10px;
+    padding-left: 5px;
+}
+
+.login-container label input:focus {
+    outline: none;
+    
+}
+
+.login-container label input::placeholder {
+    font-size: 0.6rem;
+    color: var(--cor6);
+    padding-left: 5px;
+}
+
+.login-container button {
+    width: 100px;
+    height: 30px;
+    border: 3px solid var(--cor5);
+    border-radius: 20px;
+    background-color: var(--cor5);
+    color: var(--cor1);
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.login-container button:hover  {
+    background-color: #FFF;
+    color: var(--cor6);
+    font-weight: 900;
+    border: 3px solid #FFF;
+    box-shadow: 2px 2px 20px var(--cor7);
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.linkCad a {
+    margin: 15px;
+    font-size: 0.8rem;
+}
